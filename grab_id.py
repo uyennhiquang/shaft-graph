@@ -1,11 +1,12 @@
 import re
 import requests
 import json
+import time
 
 # response = requests.post(url, data=data)
 
 file_in = "./shows.txt"
-file_out = "./show_obj.json"
+file_out = "./new_shows_obj.json"
 
 # bake_id = "5081"
 
@@ -41,6 +42,7 @@ with open(file_in) as f:
     }
 
     json_data["shows"].append(anime_obj)
+    # time.sleep(1) 
 
     # counter += 1
 
