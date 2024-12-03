@@ -43,7 +43,11 @@ for one_show in shows:
 
 sorted_degree_list = sorted(SHAFT.degree, key=lambda tuple: tuple[1], reverse=True)
 staff_count = 0
-for staff_tuple in sorted_degree_list:
-    print(staff_tuple)
-    staff_count += 1
-print("Staff count: ", staff_count)
+
+with open("./graphs/top_staff.txt", "w") as f:
+    for staff_tuple in sorted_degree_list:
+        print(staff_tuple)
+        f.write(staff_tuple.__str__())
+        f.write("\n")
+        staff_count += 1
+    print("Staff count: ", staff_count)

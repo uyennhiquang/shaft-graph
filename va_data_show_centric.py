@@ -49,5 +49,8 @@ for one_show in shows:
 # print(major_staffs)
 
 sorted_degree_list = sorted(SHAFT.degree, key=lambda tuple: tuple[1], reverse=True)
-for va_tuple in sorted_degree_list:
-    print(va_tuple)
+with open("./graphs/top_va.txt", "w") as f:
+  for va_tuple in sorted_degree_list:
+      print(va_tuple)
+      f.write(va_tuple.__str__())
+      f.write("\n")
