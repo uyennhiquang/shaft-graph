@@ -1,4 +1,5 @@
 # Shaft (and other anime studio) graphs
+[Link to GitHub Pages](https://uyennhiquang.github.io/shaft-graph/)
 
 This repository contains the code used to generate the graphs for the anime studio SHAFT. For both types of graphs - VA and Staff graph - the vertices are the VA/staff who worked on each series/show, and two vertices are adjacent if they worked on the same project. Here are some noteworthy quirks:
 
